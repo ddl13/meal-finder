@@ -49,6 +49,7 @@ function searchMeal(e) {
 function randomMeal() {
   mealsEl.innerHTML = "";
   resultHeading.innerHTML = "";
+  search.value = "";
 
   fetch(`https://www.themealdb.com/api/json/v1/1/random.php`)
     .then((res) => res.json())
